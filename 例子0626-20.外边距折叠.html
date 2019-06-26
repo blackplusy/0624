@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background: skyblue;
+		}
+		.div1 {
+			margin-bottom: 50px;
+		}
+		.div2 {
+			margin-top: 50px;
+		}
+		.span {
+			margin-right: 50px;
+		}
+		.span{
+			margin-left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 外边距这贴情况只会出现在上下外边距情况 -->
+	<!-- 外边距一定是取最大那个边距 -->
+	<div class="div1">1</div>
+	<div class="div2">2</div>
+	<span class="span1">123</span>
+	<span class="span2">456</span>
+</body>
+</html>
