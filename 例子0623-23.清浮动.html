@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* (非常重要) 4. 为父元素提供overflow: hidden */
+        .container {
+            width: 400px;
+            border: 10px solid black;
+            margin: auto auto;
+            overflow: hidden;
+        }
+        .box {
+            width: 200px;
+            background: pink;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            博文<br />
+            博文<br />
+            博文<br />
+            博文<br />
+            博文<br />
+            博文<br />
+            博文<br />
+        </div>
+        <!-- <div class="clear"></div> -->
+    </div>
+</body>
+
+</html>
