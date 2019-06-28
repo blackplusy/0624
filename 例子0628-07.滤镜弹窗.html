@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {padding: 0;margin: 0}
+		.mask {
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.4);
+			/*脱离文档流让mask脱离body的控制/
+			position: fixed;
+			/*将遮罩的左上角固定在页面的左上方，这样就可以覆盖整个页面*/
+			top:0;
+			left: 0;
+		}
+		.popup {
+			width: 400px;
+			height: 200px;
+			border: 2px solid yellow;
+			background: white;
+			/*因为黑色遮罩已经浮动上天，所以对应的弹出框也应该是一个绝对定位元素*/
+			position: fixed;
+			z-index: 10;
+			/*将div的左上角移动到页面的正中心*/
+			left: 50%;
+			top: 50%;
+			/*反向移动一半盒子模型的宽*/
+			margin-left: -202px;
+			/*反向移动一半黑子模型的高*/
+			margin-top: -102px;
+		}
+	</style>
+</head>
+<body style="height:2000px;">
+	您收看的是湖南卫视我是你爸爸节目
+	<div class="popup"></div>
+	<div class="mask"></div>
+</body>
+</html>
